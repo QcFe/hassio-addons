@@ -1,6 +1,6 @@
 
 {
-    "name": "mtthp addons repository",
-    "url": "https://github.com/mtthp/hassio-addons",
-    "maintainer": "Matthieu Petit <p.matthieu@me.com>"
+    "name": "QcFe Hass.io AddOns",
+    "url": "https://github.com/qcfe/hassio-addons",
+    "maintainer": "QcFe <info@qcfe.me>"
 }

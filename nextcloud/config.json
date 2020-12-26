@@ -3,7 +3,7 @@
     "version": "20.0.3",
     "slug": "nextcloud",
     "description": "Nextcloud addon. Image based on upstream docker images. This is just a wrapper to pass environment variable to the container.",
-    "url": "https://github.com/mtthp/hassio-addons/tree/master/nextcloud",
+    "url": "https://github.com/qcfe/hassio-addons/tree/master/nextcloud",
     "webui": "http://[HOST]:[PORT:80]",
     "panel_icon": "mdi:cloud-sync",
     "startup": "services",
@@ -18,15 +18,16 @@
         "share:rw"
     ],
     "options": {
-        "MYSQL_DATABASE": null,
-        "MYSQL_USER": null,
+        "MYSQL_DATABASE": "nextcloud",
+        "MYSQL_USER": "nextcloud",
         "MYSQL_PASSWORD": null,
-        "MYSQL_HOST": null,
+        "MYSQL_HOST": "addon_core_mariadb",
         "NEXTCLOUD_ADMIN_USER": "hassio",
         "NEXTCLOUD_ADMIN_PASSWORD": null,
         "NEXTCLOUD_TABLE_PREFIX": "nc_",
         "NEXTCLOUD_TRUSTED_DOMAINS": "hassio.local"
     },
+    "privileged": ["SYS_ADMIN"],
     "schema": false,
     "arch": [
         "aarch64",

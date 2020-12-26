@@ -5,7 +5,7 @@ FROM ${BUILD_FROM}
 COPY rootfs /
 
 RUN  apt-get update \
-  && DEBIAN_FRONTEND=noninteractive apt-get install -y jq smbclient \
+  && DEBIAN_FRONTEND=noninteractive apt-get install -y jq smbclient cifs-utils \
   && apt-get clean \
   && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/* ~/.cache
 
@@ -41,5 +41,5 @@ LABEL \
     org.label-schema.url="https://github.com/qcfe/hassio-addons" \
     org.label-schema.usage="https://github.com/qcfe/hassio-addons/tree/master/nextcloud/README.md" \
     org.label-schema.vcs-ref=${BUILD_REF} \
-    org.label-schema.vcs-url="https://github.com/mtthp/hassio-addons/" \
+    org.label-schema.vcs-url="https://github.com/qcfe/hassio-addons/" \
     org.label-schema.vendor="QcFe Hass.io Add-ons"

@@ -14,6 +14,7 @@
     "ports_description": {
         "80/tcp": "Web interface"
     },
+    "apparmor": false,
     "map": [
         "share:rw"
     ],
@@ -22,12 +23,11 @@
         "MYSQL_USER": "nextcloud",
         "MYSQL_PASSWORD": null,
         "MYSQL_HOST": "addon_core_mariadb",
-        "NEXTCLOUD_ADMIN_USER": "hassio",
-        "NEXTCLOUD_ADMIN_PASSWORD": null,
-        "NEXTCLOUD_TABLE_PREFIX": "nc_",
-        "NEXTCLOUD_TRUSTED_DOMAINS": "hassio.local"
+        "NEXTCLOUD_TRUSTED_DOMAINS": "hassio.local",
+        "SMB_SHARE": null,
+        "SMB_OPTS": "rw,guest,vers=2.0,uid=www-data,forceuid,gid=root,forcegid,file_mode=0770,dir_mode=0770"
     },
-    "privileged": ["SYS_ADMIN"],
+    "privileged": ["SYS_ADMIN", "DAC_READ_SEARCH"],
     "schema": false,
     "arch": [
         "aarch64",

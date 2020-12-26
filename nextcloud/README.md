@@ -63,4 +63,4 @@ Do not forget to map a port to your host.
 
 ## Troubleshooting
 
-If you have in issue with your installation, please be sure to checkout the [TROUBLESHOOT](https://github.com/mtthp/hassio-addons/blob/master/nextcloud/TROUBLESHOOT.md) guide before opening an issue.
+If you have in issue with your installation, please be sure to checkout the [TROUBLESHOOT](https://github.com/qcfe/hassio-addons/blob/master/nextcloud/TROUBLESHOOT.md) guide before opening an issue.

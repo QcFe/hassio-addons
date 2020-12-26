@@ -5,7 +5,7 @@
 These add-ons can be installed in Home Assistant by [configuring the following URL in the Hass.io panel](https://home-assistant.io/hassio/installing_third_party_addons/):
 
 ```txt
-https://github.com/mtthp/hassio-addons
+https://github.com/qcfe/hassio-addons
 ```
 
 ### [Nextcloud](nextcloud)
@@ -14,4 +14,4 @@ A safe home for all your data. Access & share your files, calendars, contacts, m
 
 ## Acknowledgement
 
-- [Patrick Streule](https://github.com/pstreule) for the [README](https://github.com/pstreule/hassio-addons/blob/master/README.md)
+Forked from [Matthieu Petit](https://github.com/mtthp): [Hassio Add-ons](https://github.com/mtthp/hassio-addons/)

@@ -18,6 +18,10 @@ RUN  sed -i "s|/var/www|/share/nextcloud|g" /etc/apache2/sites-enabled/000-defau
 
 RUN echo "ServerName localhost" | tee /etc/apache2/conf-available/fqdn.conf && a2enconf fqdn
 
+WORKDIR "/share/nextcloud/html"
+
+RUN alias occ="php /share/nextcloud/html/occ"
+
 ENTRYPOINT [ "/usr/bin/run.sh" ]
 CMD ["apache2-foreground"]
 

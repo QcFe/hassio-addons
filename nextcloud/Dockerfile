@@ -20,7 +20,7 @@ RUN echo "ServerName localhost" | tee /etc/apache2/conf-available/fqdn.conf && a
 
 WORKDIR "/share/nextcloud/html"
 
-RUN alias occ="php /share/nextcloud/html/occ"
+RUN echo 'alias occ="php /share/nextcloud/html/occ"' >> ~/.bashrc
 
 ENTRYPOINT [ "/usr/bin/run.sh" ]
 CMD ["apache2-foreground"]

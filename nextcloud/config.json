@@ -1,6 +1,6 @@
 {
     "name": "Nextcloud",
-    "version": "20.0.3",
+    "version": "20.0.7",
     "slug": "nextcloud",
     "description": "Nextcloud addon. Image based on upstream docker images. This is just a wrapper to pass environment variable to the container.",
     "url": "https://github.com/qcfe/hassio-addons/tree/master/nextcloud",
@@ -28,7 +28,15 @@
         "SMB_OPTS": "rw,guest,vers=2.0,uid=www-data,forceuid,gid=root,forcegid,file_mode=0770,dir_mode=0770"
     },
     "privileged": ["SYS_ADMIN", "DAC_READ_SEARCH"],
-    "schema": false,
+    "schema": {
+        "MYSQL_DATABASE": "str",
+        "MYSQL_USER": "str",
+        "MYSQL_PASSWORD": "str",
+        "MYSQL_HOST": "str",
+        "NEXTCLOUD_TRUSTED_DOMAINS": "str",
+        "SMB_SHARE": "str",
+        "SMB_OPTS": "str"
+    },
     "arch": [
         "aarch64",
         "amd64",

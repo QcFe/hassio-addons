@@ -1,0 +1,29 @@
+{
+    "name": "Collabora CODE",
+    "version": "2023.1.21",
+    "slug": "collabora-code",
+    "description": "Collabora CODE addon for use in NextCloud. Use upstream Collabora Code image.",
+    "url": "https://github.com/qcfe/hassio-addons/tree/master/collabora-code",
+    "panel_icon": "mdi:file-document-edit-outline",
+    "startup": "application",
+    "boot": "auto",
+    "ports": {
+        "9980/tcp": null
+    },
+    "ports_description": {
+        "9980/tcp": "WOPI"
+    },
+    "apparmor": false,
+    "options": {
+        "extra_params": "--o:ssl.enable=false"
+    },
+    "schema": {
+        "extra_params": "str"
+    },
+    "arch": [
+        "aarch64",
+        "amd64",
+        "armhf",
+        "armv7"
+    ]
+}

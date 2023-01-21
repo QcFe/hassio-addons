@@ -6,7 +6,7 @@
     "url": "https://github.com/qcfe/hassio-addons/tree/master/nextcloud",
     "webui": "http://[HOST]:[PORT:80]",
     "panel_icon": "mdi:cloud-sync",
-    "startup": "services",
+    "startup": "application",
     "boot": "auto",
     "ports": {
         "80/tcp": null

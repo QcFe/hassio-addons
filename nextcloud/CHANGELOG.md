@@ -1,3 +1,6 @@
+## 25.0.x - 2023-01-21
+- Set upstream image to 25.0.x for hopefully upgrade without repo intervention (needs image rebuild from Supervisor gui)
+
 ## 20.0.3 - 2020-12-14
 ### Changed
 - Follow Nextcloud version naming.

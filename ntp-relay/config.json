@@ -1,0 +1,23 @@
+{
+  "name": "NTP Relay",
+  "version": "0.1.0",
+  "slug": "ntp_relay",
+  "description": "A simple NTP relay for propagating internal Home Assistant time",
+  "url": "https://github.com/qcfe/hassio-addons/tree/master/ntp-relay",
+  "startup": "application",
+  "boot": "auto",
+  "options": {},
+  "schema": {},
+  "ports": {
+    "1230/udp": 123
+  },
+  "ports_description": {
+    "1230/tcp": "NTP port"
+  },
+  "arch": [
+    "aarch64",
+    "amd64",
+    "armhf",
+    "armv7"
+  ]
+}

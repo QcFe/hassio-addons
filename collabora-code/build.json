@@ -1,8 +1,0 @@
-{
-  "build_from": {
-    "armhf": "collabora/code:latest",
-    "armv7": "collabora/code:latest",
-    "aarch64": "collabora/code:latest",
-    "amd64" : "collabora/code:latest"
-  }
-}

@@ -1,3 +1,6 @@
+# NOTICE
+This plugin is not really currently maintained. I switched the builder image to the production tag so that it can be automatically updatable, but I won't be able to ensure this keeps working.
+
 # Hass.io Add-ons: Nextcloud
 
 Self-hosted file share and collaboration platform on the web.
